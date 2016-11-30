@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.quiz.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bunny Knowledge Assesment"
+        android:id="@+id/quiz_title"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="#03A9F4"/>
+    <TextView
+        style="@style/Header_Style_Text"
+        android:paddingTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1"
+        />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bunnies are rodents. True or False?"
+            android:id="@+id/First_Question"
+            android:paddingBottom="10dp"/>
+        <RadioGroup
+            android:id="@+id/First_Question_Radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/First_Question"
+            android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/Question1_Incorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/First_Question"
+            android:text="True"/>
+        <RadioButton
+            android:id="@+id/Question1_Correct"
+            android:paddingTop="4dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Question1_Incorrect"
+            android:text="False"
+            android:paddingBottom="8dp"/>
+        </RadioGroup>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#03A9F4"
+        />
+    <TextView
+        style="@style/Header_Style_Text"
+        android:paddingTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 2"
+        />
+    <TextView
+        android:paddingTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check which items bunnies can eat."
+        android:id="@+id/Second_Question"
+        android:paddingBottom="10dp"/>
+    <CheckBox
+        android:id="@+id/BananaCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:text="Banana"
+        />
+    <CheckBox
+        android:id="@+id/IcebergLettuceCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iceberg Lettuce"
+        android:paddingBottom="4dp"
+        />
+    <CheckBox
+        android:id="@+id/ParsleyCheckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Parsley"
+        android:paddingBottom="10dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#03A9F4"
+        />
+    <TextView
+        style="@style/Header_Style_Text"
+        android:paddingTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 3"
+        />
+    <TextView
+        android:paddingTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bunnies with floppy ears that hang down are called what?"
+        android:id="@+id/Third_Question"
+        android:paddingBottom="10dp"/>
+        <RadioGroup
+            android:id="@+id/Third_Question_Radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/First_Question"
+            android:orientation="vertical">
+    <RadioButton
+        android:id="@+id/Question3_incorrect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Floppy Bunnies"
+        android:paddingBottom="4dp"/>
+    <RadioButton
+        android:id="@+id/Question3_incorrect2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blop Bunnies"
+        android:paddingBottom="4dp"/>
+    <RadioButton
+        android:id="@+id/Question3_Correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lop Bunnies"
+        android:paddingBottom="10dp"/>
+        </RadioGroup>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#03A9F4"
+            />
+        <TextView
+            style="@style/Header_Style_Text"
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 4"
+            />
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bunnies can be litter box trained. True or False?"
+            android:id="@+id/Fourth_Question"
+            android:paddingBottom="10dp"/>
+        <RadioGroup
+            android:id="@+id/Fourth_Question_Radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/First_Question"
+            android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/Question4_Correct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="True"
+            android:paddingBottom="4dp"/>
+        <RadioButton
+            android:id="@+id/Question4_Incorrect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="False"
+            android:paddingBottom="10dp"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#03A9F4"
+            />
+        <TextView
+            style="@style/Header_Style_Text"
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 5"
+            />
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is your favorite thing about bunnies?"
+            android:id="@+id/Fifth_Question"
+            android:paddingBottom="10dp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/favorite_text"
+            android:hint="Type here"
+            android:paddingBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+            android:id="@+id/submit_score"
+            android:onClick="submitScore"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:id="@+id/resetButton"
+            android:onClick="reset"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
